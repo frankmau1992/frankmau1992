@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity() {
       val universidad ="Andrés Bello"
       var desarrollador="FullStack Java"
 
-        println("Mi nombre es $nombre tengo $edad años, soy $carrera de la universidad $universidad y soy desarrollador $desarrollador")
+       # println("Mi nombre es $nombre tengo $edad años, soy $carrera de la universidad $universidad y soy desarrollador $desarrollador")
     }
     private fun Actualidad() {
         desarrollador = "Android Kotlin"
