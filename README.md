@@ -1,16 +1,34 @@
-### Hi there 👋
+# HOLA MUNDO! # 
 
-<!--
-**frankmau1992/frankmau1992** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
 
-Here are some ideas to get you started:
+           Presentacion()
+           Actualidad()
+           Cnocimientos()
+    }
+//Attributes
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+  val nombre = "Franco Mauricio Muñoz Toledo"
+    var edad = 28
+    val carrera ="ingeniero en computación e informática"
+    val universidad ="Andrés Bello"
+    var desarrollador="FullStack Java"
+    val lenguajes = arrayOf("HTML","PHP","JAVA","CSS","KOTLIN","SQL")
+
+
+
+    private fun Presentacion() {
+        println("Mi nombre es $nombre tengo $edad años, soy $carrera de la universidad $universidad y soy desarrollador $desarrollador")
+    }
+    private fun Actualidad() {
+        desarrollador = "Android Kotlin"
+        println("Me desempeño actualmente como desarrollador $desarrollador")
+
+    }
+    private fun Conocimientos(){
+        println("Tengo conocimientos avanzados en los siguientes lenguajes: ${lenguajes[0]}, ${lenguajes[1]}, ${lenguajes[2]}, ${lenguajes[3]}, ${lenguajes[4]}, ${lenguajes[5]}")
+    }
